@@ -7,15 +7,6 @@ This is a client application built with React.js. It utilizes React Responsive C
  ```bash
 git clone https://github.com/your-username/client.git
 ```
-## OR 
-
-You can certainly download the code as a ZIP file, extract it, and then open it in your preferred code editor (e.g., VS Code). 
-Once you have the project folder open in your editor, you can open a terminal within the editor and run the following command to 
-install all the dependencies listed in the package.json file:
-
-```bash
-npm install
-```
 
 **Navigate to the project directory:**
  ```bash
@@ -25,8 +16,16 @@ npm install
  ```bash
 npm install
 ```
-Available Scripts
-In the project directory, you can run:
+## OR 
+
+You can certainly download the code as a ZIP file, extract it, and then open it in your preferred code editor (e.g., VS Code). 
+Once you have the project folder open in your editor, you can open a terminal within the editor and run the following command to 
+install all the dependencies listed in the package.json file:
+
+```bash
+npm install
+```
+And run the project:
 
  ```bash
 npm start
