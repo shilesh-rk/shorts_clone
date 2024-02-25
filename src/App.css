@@ -1,0 +1,82 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.App {
+    display: grid;
+    /* width: 100px; */
+    place-items: center;
+    height: 100vh;
+    color: rgb(26, 25, 25);
+    background-color: #fff;
+}
+
+.shorts-container {
+    position: relative;
+    height: 70vh;
+    width: 68%;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.carousel-desktop {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.leftArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font-size: larger;
+    z-index: 2;
+}
+
+.leftArrow>p {
+    padding: 10px;
+    color: rgb(58, 61, 63);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rightArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: larger;
+    z-index: 2;
+}
+
+.rightArrow>p {
+    padding: 10px;
+    color: rgb(58, 61, 63);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* for chrome and opera */
+.shorts-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@media (max-width:768px) {
+
+    .shorts-container {
+        height: 83vh;
+    }
+}

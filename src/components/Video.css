@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+.player-container {
+  position: relative;
+}
+
+.video-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.video-header1>* {
+  padding: 30px 20px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  height: 50px;
+  width: 50px;
+  border: 2px dotted black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title {
+  border-radius: 11%;
+  font-family: "Berkshire Swash", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0.196);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  cursor: grab;
+}
+.playButton {
+  position: absolute;
+  font-size: 90px;
+  top: 250px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: grab;
+  /* background-color: aqua; */
+  /* z-index: 2; */
+}
+
+.footer-buttons {
+  position: relative;
+  top: -110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: x-large;
+  background-color: rgba(240, 248, 255, 0.196);
+}
+
+.progress-bar {
+  display: grid;
+  position: absolute;
+  top: -7px;
+  width: 460px;
+}
+
+progress::-webkit-progress-bar {
+  justify-content: flex-start;
+  background-color: rgba(188, 202, 97, 0.847);
+  
+}
+
+progress[value]::-webkit-progress-value {
+  border-radius:0px 10px 10px 0px;
+  background-color: rgb(0, 128, 0);
+}
+
+@media (min-width:768px) {
+  .player-container {
+    position: relative;
+    /* max-width: 500px; */
+    border-radius: 20px;
+    height: 88vh;
+  }
+  
+  .footer-buttons {
+    top: -65px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .video-header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 10px 0;
+  }
+  
+  .profile {
+    height: 40px;
+    width: 30px;
+    margin-top: -20px;
+  }
+  
+  .title {
+    position: relative;
+    top: -10px;
+  }
+  
+  .progress-bar {
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 107.7px;
+    right: 85px;
+    width: 360.5px;
+  border-radius: 0 10px 0px 10px;
+  }
+}
+
+/* autoPlay, videos integration remains */
